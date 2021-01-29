@@ -1,0 +1,51 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+
+/* Colors */
+$main-background-color : #fff;
+$grey-lighter: #f5f7fa;
+$backgound-grey: #f5f7fa;
+$background-category: #f8f8f88a;
+
+$icon-color: #e0e4e4ba;
+
+$eunry: #00d8ff;
+$rob-roy: #447ad0;
+$bouquet: #b971ff;
+$olivine: #ff914f;
+$harvest-gold: #ffb56a;
+$cornflower-blue: #ff595c;
+$flight-size-image: 32px;
+$underline-link-color-dark: #363636;
+$orange: #e8921f;
+$purple: #5a5f7a !important;
+$purple-dark: #232230 !important;
+$blue :  #3864a9 !important;
+$dark2 : #1e1d2d !important;
+$yellow: #f3ca30;
+$line-color: #505050;
+
+$purple_enjoy: #575F7C;
+
+$border-radius: 10px;
+
+$size-1-extra : 5em;
+
+/* Sections */
+// $section-padding: 2.5rem 2.5rem !default;
+
+$link: $grey-darker !default;
+$link-hover: $grey !default;
+
+/* Fonts */
+$family-primary : "Montserrat", sans-serif;
+
+/* Z index values */
+$z_index_1: 1;
+$z_index_2: 10;
+
+
+$primary: $purple_enjoy;
+
+/*Sections*/
+$section-padding: 0;
+

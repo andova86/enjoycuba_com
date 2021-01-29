@@ -1,0 +1,48 @@
+.footer
+{
+    .container
+    {
+        //margin: 1.5rem 0 1.5rem 0;
+
+        a{
+            font-size: 16px;
+            color: $purple;
+
+            @include media-max(768px)
+            {
+                margin: 0 10px;
+            }
+        }
+    
+        .title
+        {
+            font-size: 16px;
+            color: $purple;
+            margin-bottom: 0.75rem !important;
+            font-weight: 700;
+        }
+
+        hr{
+            background-color: $line-color !important;
+            height: 1px !important;
+            margin: 0 !important;
+            position: relative;
+            display: block;
+            top: -21px;
+
+            @include media-max(768px)
+            {
+                top: -11px
+            }
+          }
+
+        .logo
+        {
+            @include media-max(768px)
+            {
+                width: 40%;
+            }
+        }
+    }
+}
+

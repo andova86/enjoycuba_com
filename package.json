@@ -1,0 +1,25 @@
+{
+  "name": "enjoy-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "bulma": "^0.9.1",
+    "isomorphic-unfetch": "^3.1.0",
+    "next": "10.0.5",
+    "next-redux-wrapper": "^6.0.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-multi-carousel": "^2.6.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.32.5",
+    "sharp": "^0.27.0"
+  }
+}

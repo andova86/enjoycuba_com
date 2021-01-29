@@ -1,0 +1,38 @@
+.sitio_list{
+
+
+
+
+
+}
+
+.sitio_card{
+
+ display: grid;
+  width: 150px;
+  height: 50px;
+  grid-template-columns: auto;
+
+  grid-template-areas: "body";
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+ margin: 10px;
+  border-radius: 15px !important;
+
+
+  &_body{
+
+
+
+    &_title{
+      color: white;
+      font-size: 12px;
+
+    }
+
+  }
+
+
+
+}

@@ -1,0 +1,123 @@
+.testimonial
+{
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-image: url('../../../public/img/testimonial-background.svg');
+    height: 410px;
+
+    @include media-max(768px)
+    {
+      height: 236px;
+    }
+
+    .title{
+        @include media-max(768px)
+        {
+            margin: 2rem 0 0.75rem 0;
+            font-size: 1rem;
+        }
+    }
+
+    
+    .card
+    {
+        background-repeat: no-repeat;
+        background-position: 96% 10px;
+        background-image: url('../../../public/img/testimonial.svg');
+        background-size: 32px;
+        right: 0;
+        width: 300px; 
+        height: 181px;
+
+        @include media-max(768px)
+        {
+          height: 153px;
+        }
+
+        .card-content
+        {
+            @include media-max(768px)
+            {
+                padding: 0.75rem;
+            }
+
+            .content{
+                @include media-max(768px)
+                {
+                    margin-bottom: 0.75rem;
+                }  
+
+                .title
+                {
+                    font-size: 16px;
+                    font-weight: 700; //bold
+                    color:$purple-dark;
+                    margin-bottom: 0;
+
+                    @include media-max(768px)
+                    {
+                        font-size: 14px;
+                        margin-top: 0;
+                    }  
+                }
+
+                hr
+                {
+                    background-color: $purple;
+                    margin: 0.7rem 0 0.7rem 0;
+                    height: 1px;
+                    display: block;
+
+                    @include media-max(768px)
+                    {
+                        margin: 0.7rem 0 0.3rem 0;
+                    }
+                }
+
+                p
+                {
+                    font-size: 11px;
+                    font-style: italic;
+                    color:#505050;
+                    margin-top: 8px;
+
+                    @include media-max(768px)
+                    {
+                        margin: 0;
+                        font-size: 11px;
+                    }
+                }
+            }
+
+            .avatar
+            {
+                .name
+                {
+                    font-size: 12px;
+                    font-weight: 600; //semi-bold
+                    color:$purple-dark;
+                    margin-bottom: 0;
+
+                    @include media-max(768px)
+                    {
+                        font-size: 10px;
+                    }
+                }
+
+                .date
+                {
+                    font-size: 12px;
+                    color:#808080;
+
+                    @include media-max(768px)
+                    {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

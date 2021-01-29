@@ -1,0 +1,166 @@
+.splash
+{
+    .splash-header{
+        color: $purple;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .button
+    {
+        border-radius: 11px;
+    }
+
+    .container
+    {
+        margin: 1.5rem;
+        display: flex;
+
+        @include media-max(768px)
+        {
+            margin: 0;
+        }
+
+        .splash-image
+        {
+            width: 40%;
+
+            @include media-max(768px)
+            {
+                width: 60%;
+            }
+        }
+
+        .splash-content
+        {
+            width: 60%;
+            padding-left: 1.5em;
+
+            @include media-max(768px)
+            {
+                width: 40%;
+            }
+
+            .header
+            {
+                font-size: 1.8rem;
+                color: $purple;
+                font-weight: 600; //semi-bold
+                margin-bottom: 19px;
+
+                @include media-max(768px)
+                {
+                    font-size: 1rem;
+                }
+            }
+
+            .title{
+                font-size: 5rem;
+                color: $blue;
+                font-weight: 900;
+                margin-bottom: 10px;
+
+                @include media-max(768px)
+                {
+                    font-size: 1.8rem;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .subtitle
+            {
+                font-size: 2.5rem;
+                color: $blue;
+                font-weight: 600; // medium
+
+                @include media-max(768px)
+                {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .description
+            {
+                font-size: 1.25rem;
+                color: $line-color;
+                padding-top: 33px
+            }
+
+            .decorator::after {
+                content: "";
+                background-image: url(../../../public/img/line.svg);
+                background-repeat: no-repeat;
+                height: 25px;
+                width: 215px;
+                display: block;
+                margin-bottom: 0px;
+
+                @include media-max(768px)
+                {
+                    height: 8px;
+                    width: 95px;
+                }
+            }
+        }
+    }
+}
+
+
+.splash-middle
+{
+    .container
+    {
+        .column
+        {
+            padding: 1rem;
+
+            @include media-max(768px)
+            {
+                padding: 0rem;
+            }
+        }
+
+        .splash-content
+        {
+            .title
+            {
+                font-size: 4.5rem;
+                font-weight: 700;
+                color: $blue;
+                margin-bottom: -6px;
+
+                @include media-max(768px)
+                {
+                    font-size: 2.8rem;
+                    margin-bottom: -4px;
+                }
+            }
+
+            .subtitle
+            {
+                font-size: 2.6rem;
+                color: $purple;
+                margin: 0;
+
+                @include media-max(768px)
+                {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .decorator::after {
+                content: "";
+                background-image: url(../../../public/img/line.svg);
+                background-repeat: no-repeat;
+                height: 25px;
+                width: 180px;
+                display: inline-block;
+
+                @include media-max(768px)
+                {
+                    width: 120px;
+                }
+            }
+        }
+    }
+}

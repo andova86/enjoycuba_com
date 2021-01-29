@@ -1,0 +1,40 @@
+.information {
+  .header
+  {
+    font-size: 22px;
+    color: #232230;
+
+    @include media-max(768px)
+    {
+      font-size: 17px;
+      text-align: center;
+    }
+  }
+
+  .title
+  {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3864a9;
+
+    @include media-max(768px)
+    {
+      font-size: 12px;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+
+  p{
+    font-size: 0.6875rem;
+    color:  #3864a9
+    ;
+  }
+
+  @include media-max(768px) 
+  {
+    .card{
+      box-shadow: none;
+    }
+  }
+}

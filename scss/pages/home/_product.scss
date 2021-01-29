@@ -1,0 +1,43 @@
+.products {
+  .category_list {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 40px 0;
+    padding-top: 10px;
+
+    @include media-max(768px) {
+      justify-content: center !important;
+  
+    }
+  }
+
+  .columns{
+    padding: 1.5rem;
+
+    @include media-max(768px) {
+      // padding: 1rem
+    }
+
+    .column{
+      @include media-max(768px) {
+        padding: 0;
+      }
+    }
+
+    .header{
+      font-size: 1.5rem;
+  
+      @include media-max(768px) {
+        font-size: 0.81rem;
+        padding: 0;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+
+

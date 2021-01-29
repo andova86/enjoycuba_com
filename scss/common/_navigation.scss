@@ -1,0 +1,66 @@
+nav.navbar {
+  background-color: transparent;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.5rem 0 1.5rem 0;
+
+  @include media-max(768px)
+  {
+    margin: 0;
+    height: 45px;
+    min-height: 45px;
+  }
+  
+  .navbar-item img {
+    max-height: 2.75rem;
+  }
+
+  .navbar-brand img{
+    @include media-max(768px)
+    {
+      max-height: 2rem;
+    }
+  }
+
+  .field img {
+    max-height: .875em;
+  };
+
+  .navbar-center {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    left: 43%;
+  }
+
+  .textarea,
+  .input {
+    border-radius: 10px;
+    height: 90%;
+  }
+
+  .title{
+    font-size: 16px;
+    color: $blue;
+  }
+
+  .subtitle{
+    font-size: 16px;
+    color: $blue;
+  }
+
+  ::placeholder{
+    font-size: 13px;
+    color: #8e919b;
+  }
+
+  .control.has-icons-left .icon, .control.has-icons-right .icon {
+    color: #f5f7fa;
+    height: 2.2em;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 2.5em;
+    z-index: 4;
+  }
+}

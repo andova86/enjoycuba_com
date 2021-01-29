@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* Commons styles */
+@import "./common/fonts";
+@import "./common/variables";
+@import "./common/mixins";
+@import "./common/class";
+@import "./common/navigation";
+@import "./common/footer";
+
+/* Bulma */
+@import "~bulma/bulma";
+
+
+/* Page home */
+@import "./pages/home/category";
+@import "./pages/home/splash";
+@import "./pages/home/destination";
+@import "./pages/home/information";
+@import "./pages/home/package";
+@import "./pages/home/product";
+@import "./pages/home/destacados";
+
+@import "./pages/home/sitios";
+
+@import "./pages/home/testimonial.scss";

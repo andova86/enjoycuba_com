@@ -1,0 +1,312 @@
+.custom-background {
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+// .custom-background:after
+// {
+//     content: "";
+//     position: absolute;
+//     height: 18px;
+//     left: 3.5em;
+//     bottom: -4px;
+//     background: #fff;
+//     clip-path: ellipse(45% 100% at 45% 100%);
+//     width: 100%;
+
+// }
+
+.custom-background2 {
+  border-radius: 10px;
+}
+
+.custom-background2:after {
+  content: "";
+  position: absolute;
+  height: 18px;
+  bottom: -4px;
+  left:10px;
+
+  background: #fff;
+  clip-path: ellipse(45% 100% at 45% 100%);
+  width: 100%;
+
+}
+
+.logo {
+  width: 25%;
+}
+
+.decorator-large {
+  width: 225px;
+}
+
+.decorator-small {
+  width: 120px;
+}
+
+/* Text */
+
+.has-text-weight-bold-extra {
+  font-weight: 900;
+  font-family: $family-primary;
+}
+
+.has-text-orange-light {
+  color: $orange;
+}
+
+.has-text-purple {
+  color: $purple;
+}
+
+.has-background-purple {
+  background-color: $purple;
+}
+
+.has-text-blue-dark {
+  color: $blue;
+}
+
+.has-bg-blue-dark {
+  background: $blue;
+
+}
+
+
+.has-bg-blue-footer{
+  background: #575F7C;
+  color: white;
+}
+
+.is-underline{
+  text-decoration: underline;
+  color: $blue;
+}
+
+
+.has-text-purple-dark {
+  color: $purple-dark;
+}
+
+
+.has-text-purple-enjoy{
+  color: $purple-enjoy;
+}
+
+.has-bg-purple-enjoy {
+  background: $purple-enjoy;
+}
+
+
+.is-size-1-extra {
+  font-size: $size-1-extra;
+}
+
+.is-horizontal-center {
+  justify-content: center;
+}
+
+.is-text-overflow {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  display: none;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.scroll::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-track:hover,
+.scroll::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.input_find {
+ width: 200px;
+
+}
+
+hr{
+  background-color: $line-color !important;
+  height: 1px !important;
+}
+
+.p-0-mobile{
+
+ @media screen and (max-width: 768px){
+		 padding: 0 !important;
+	}
+
+}
+
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+.has-bg-light{
+  background: #F5F7FA;
+}
+
+.img-rounded
+{
+  border-radius: 50%;
+}
+
+@include media-between(0px, 427px) 
+  {
+    .custom-background:after
+    {
+      height: 12px;
+      left: 1.7em;
+      bottom: -4px;
+      width: 90%;
+    }
+  }
+
+  @include media-max(769px) 
+  {
+    .custom-background:after
+    {
+      width: 93%;
+    }
+  }
+
+  @include media-max(1024px) 
+  {
+    .custom-background:after
+    {
+      width: 97%;
+    }
+  }
+
+  .br-10
+  {
+    border-radius: 20px !important;
+  }
+
+
+.excerpt-hidden {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+   -webkit-transition: max-height 0.8s;
+	-moz-transition: max-height 0.8s;
+	transition: max-height 0.8s;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 1) 100% );
+  }
+}
+
+.excerpt-visible {
+  height: auto;
+  overflow: auto;
+
+
+}
+
+.img_resp
+{
+  max-width: 100%;
+  height: auto;
+  object-position: top;
+  object-fit: cover;
+}
+
+.disabled_hover {
+
+  //opacity: 0.5;
+  pointer-events: none ;
+
+}
+
+.enabled_hover {
+
+  //opacity: 0.5;
+  pointer-events: auto ;
+
+}
+
+/* Padding */
+
+@include media-max(768px)
+{
+    .p-5
+    {
+      padding: 1rem !important;
+    }
+}
+
+.d-none{
+  display: none;
+}
+
+.link{
+  @include media-max(768px) {
+    font-size: 0.81rem !important;
+  }
+}
+
+.category_card_radio{
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
